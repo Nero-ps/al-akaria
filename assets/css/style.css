@@ -1,0 +1,80 @@
+:root {
+  --bg-btn: #1B8354;
+  --default-text-clr:#161616;
+  --clr-title:#1F2A37;
+  --font-500: IBMPlexSansArabic-SemiBold;
+  --font-600: IBMPlexSansArabic-Medium;
+  --font-700: IBMPlexSansArabic-Bold;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansArabic-Regular';
+    src: url('fonts/IBMPlexSansArabic-Regular.woff2') format('woff2'),
+         url('fonts/IBMPlexSansArabic-Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'IBMPlexSansArabic-SemiBold';
+    src: url('fonts/IBMPlexSansArabic-SemiBold.woff2') format('woff2'),
+         url('fonts/IBMPlexSansArabic-SemiBold.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'IBMPlexSansArabic-Medium';
+    src: url('fonts/IBMPlexSansArabic-Medium.woff2') format('woff2'),
+         url('fonts/IBMPlexSansArabic-Medium.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'IBMPlexSansArabic-Bold';
+    src: url('fonts/IBMPlexSansArabic-Bold.woff2') format('woff2'),
+         url('fonts/IBMPlexSansArabic-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'IBMPlexSansArabic-Regular';
+  font-weight: 400;
+}
+
+p{
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--default-text-clr);
+}
+
+a{
+  text-decoration: none;
+}
+
+.form-label{
+    color: var(--default-text-clr);
+    font-family: var(--font-600);
+}
+
+.form-control{
+    background: #F3F4F6;
+    height: 40px;
+    border-color: transparent;
+    border-radius: 4px;
+    text-align: right;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.form-control:focus {
+    border-color: #074D31;
+    box-shadow: 0 0 0 .25rem rgb(7 77 49 / 26%);
+}
