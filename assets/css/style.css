@@ -1,51 +1,45 @@
 :root {
-  --bg-btn: #1B8354;
-  --default-text-clr:#161616;
-  --clr-title:#1F2A37;
-  --font-500: IBMPlexSansArabic-SemiBold;
-  --font-600: IBMPlexSansArabic-Medium;
-  --font-700: IBMPlexSansArabic-Bold;
-}
-
-@font-face {
-    font-family: 'IBMPlexSansArabic-Regular';
-    src: url('fonts/IBMPlexSansArabic-Regular.woff2') format('woff2'),
-         url('fonts/IBMPlexSansArabic-Regular.woff') format('woff');
-    font-weight: 400;
+  --text-clr:#142238;
+  --clr-hover: #AE917C;
+  --sans-arabic: 'TheSansArabic-Light';
+  --sans-bold: 'TheSans-Bold';
+  --sans-light: 'TheSans-Plain';
 }
 @font-face {
-    font-family: 'IBMPlexSansArabic-SemiBold';
-    src: url('fonts/IBMPlexSansArabic-SemiBold.woff2') format('woff2'),
-         url('fonts/IBMPlexSansArabic-SemiBold.woff') format('woff');
-    font-weight: 500;
+    font-family: 'TheSansArabic-Light';
+    src: url('../fonts/TheSansArabic-Light.woff2') format('woff2'),
+         url('../fonts/TheSansArabic-Light.woff') format('woff');
 }
 @font-face {
-    font-family: 'IBMPlexSansArabic-Medium';
-    src: url('fonts/IBMPlexSansArabic-Medium.woff2') format('woff2'),
-         url('fonts/IBMPlexSansArabic-Medium.woff') format('woff');
-    font-weight: 600;
+    font-family: 'TheSans-Bold';
+    src: url('../fonts/TheSans-Bold.woff2') format('woff2'),
+         url('../fonts/TheSans-Bold.woff') format('woff');
 }
 @font-face {
-    font-family: 'IBMPlexSansArabic-Bold';
-    src: url('fonts/IBMPlexSansArabic-Bold.woff2') format('woff2'),
-         url('fonts/IBMPlexSansArabic-Bold.woff') format('woff');
-    font-weight: 700;
+    font-family: 'TheSans-Plain';
+    src: url('../fonts/TheSans-Plain.woff2') format('woff2'),
+         url('../fonts/TheSans-Plain.woff') format('woff');
 }
-
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body{
-  font-family: 'IBMPlexSansArabic-Regular';
   font-weight: 400;
+  font-family: var(--sans-arabic);
+  height: 100%;
+  color: var(--text-clr);
 }
 
 p{
     font-size: 18px;
-    line-height: 30px;
-    color: var(--default-text-clr);
+    font-family: var(--sans-arabic);
+}
+
+h1,h2,h2,h3,h4,h5,h6{
+    font-family: var(--sans-light);
 }
 
 a{
@@ -74,7 +68,146 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
+.py-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.btn-light{
+    border: 1px solid #fff;
+    border-radius: 0px;
+    padding: 13px 15px;
+    background: none;
+    color: #fff;
+}
+
+.btn-primary{
+    border: 1px solid var(--text-clr);
+    border-radius: 0px;
+    padding: 13px 30px;
+    background: var(--text-clr);
+    color: #fff;
+}
+
+.btn-primary:hover{
+    background: var(--clr-hover);
+    border: 1px solid var(--clr-hover);
+}
+
+.container-fluid{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
 .form-control:focus {
     border-color: #074D31;
     box-shadow: 0 0 0 .25rem rgb(7 77 49 / 26%);
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.header .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header .navbar-brand img{
+    width: 150px;
+    height: auto;
+}
+
+.header .nav-item .nav-link{
+    color: #fff;
+}
+
+.dropdown-toggle::after{
+    vertical-align: middle;
+}
+
+.search-btn img{
+    width: 22px;
+}
+
+.hero{
+    height: 92vh;
+    background: url('../images/hero-bg.webp') no-repeat;
+    background-position: 40% 43%;
+}
+
+.about-block{
+    background: #F8F5EF;
+}
+
+.about-us p{
+    text-align: justify;
+}
+
+.title-block h2{
+    font-family: var(--sans-light);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.title-block h3{
+    color: var(--clr-hover);
+    font-family: var(--sans-light);
+    font-size: 40px;
+}
+
+.gallery-about img{
+    max-width: 100%;
+    width: 100%;
+    height: 242px;
+    object-fit: cover;
+}
+
+
+.counter .counter-block label{
+    font-size: 30px;
+    font-family: var(--sans-bold);
+}
+.counter .counter-block h4{
+    font-size: 16px;
+    font-family: var(--sans-arabic);
+}
+
+.about-services h3{
+    font-family: var(--sans-bold);
+    font-size: 22px;
+}
+
+.card-project .img-project{
+    height: 600px;
+}
+
+.card-project .type-project{
+    background: #313853E0;
+    color: #FFFFFF;
+    padding: 15px 20px 15px 20px;
+    font-family: var(--sans-light);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.card-project .info-project{
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.card-project .info-project label img{
+    width: 20px;
+}
+
+.card-project .info-project h2{
+   font-size: 25px;
+   font-family: var(--sans-light);
+}
+
+.card-project .info-project span{
+    font-family: var(--sans-light);
 }
