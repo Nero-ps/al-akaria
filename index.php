@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="assets/css/fancybox.css"/>
+    <link rel="stylesheet" href="assets/css/all.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-
   <header class="header">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand me-5" href="#"> <img src="assets/images/logo.svg"> </a>
+        <a class="navbar-brand me-5" href="#"><img src="assets/images/logo.svg"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -70,13 +70,11 @@
     </nav>
   </header>
   <section class="hero">
-    <video>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
+    <video preload="auto" playsinline autoplay loop muted>
+      <source src="assets/videos/hero.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </section>
-
   <section class="about-block py-80">
     <div class="container">
       <div class="about-us mb-5">
@@ -94,21 +92,21 @@
         </div>
       </div>
       <div class="gallery-about d-flex justify-content-center gap-1">
-        <a href="#"><img src="assets/images/about1.webp"></a>
-        <a href="#"><img src="assets/images/about2.webp"></a>
-        <a href="#"><img src="assets/images/about3.webp"></a>
+        <a href="assets/images/about1.webp" data-fancybox="gallery"><img src="assets/images/about1.webp"></a>
+        <a href="assets/images/about2.webp" data-fancybox="gallery"><img src="assets/images/about2.webp"></a>
+        <a href="assets/images/about3.webp" data-fancybox="gallery"><img src="assets/images/about3.webp"></a>
       </div>
       <div class="counter d-flex justify-content-center mt-4 mb-5 gap-5 text-center">
         <div class="counter-block">
-          <label>09</label>
+          <label>09 </label>
           <h4>مشاريع جاهزة</h4>
         </div>
         <div class="counter-block">
-          <label>+3.75مليار</label>
+          <label>+3.75 مليار</label>
           <h4>ريال سعودي رأس مال مدفوع</h4>
         </div>
         <div class="counter-block">
-          <label>+26مليون</label>
+          <label>+26 مليون</label>
           <h4>متر مربع من الأراضي</h4>
         </div>
       </div>
@@ -130,8 +128,7 @@
       </div>
     </div>
   </section>
-
-  <section class="projects py-80 pb-5 mx-2">
+  <section class="projects py-80 pb-5">
       <div class="container title-block mb-5">
         <h2>ماضٍ عريق يلهم مستقبلنا</h2>
         <h3>رؤية تتجلى في كل مشروع ننجزه</h3>
@@ -141,18 +138,262 @@
         <label class="type-project">بيع</label>
         <img class="img-fluid img-project" src="assets/images/project.webp">
         <div class="info-project text-white p-4">
-          <label class="d-flex align-items-center gap-2 mb-3"><img src="assets/images/location.svg"> الرياض</label>
+          <label class="d-flex align-items-center gap-2 mb-3"><i class="fa-solid fa-location-dot"></i> الرياض</label>
+          <h2 class="mb-3">العقارية الثانية</h2>
+          <span>تجاري - مكتبي</span>
+        </div>
+      </div>
+      <div class="card-project position-relative">
+        <label class="type-project">بيع</label>
+        <img class="img-fluid img-project" src="assets/images/project.webp">
+        <div class="info-project text-white p-4">
+          <label class="d-flex align-items-center gap-2 mb-3"><i class="fa-solid fa-location-dot"></i> الرياض</label>
+          <h2 class="mb-3">العقارية الثانية</h2>
+          <span>تجاري - مكتبي</span>
+        </div>
+      </div>
+      <div class="card-project position-relative">
+        <label class="type-project">بيع</label>
+        <img class="img-fluid img-project" src="assets/images/project.webp">
+        <div class="info-project text-white p-4">
+          <label class="d-flex align-items-center gap-2 mb-3"><i class="fa-solid fa-location-dot"></i> الرياض</label>
+          <h2 class="mb-3">العقارية الثانية</h2>
+          <span>تجاري - مكتبي</span>
+        </div>
+      </div>
+      <div class="card-project position-relative">
+        <label class="type-project">بيع</label>
+        <img class="img-fluid img-project" src="assets/images/project.webp">
+        <div class="info-project text-white p-4">
+          <label class="d-flex align-items-center gap-2 mb-3"><i class="fa-solid fa-location-dot"></i> الرياض</label>
+          <h2 class="mb-3">العقارية الثانية</h2>
+          <span>تجاري - مكتبي</span>
+        </div>
+      </div>
+      <div class="card-project position-relative">
+        <label class="type-project">بيع</label>
+        <img class="img-fluid img-project" src="assets/images/project.webp">
+        <div class="info-project text-white p-4">
+          <label class="d-flex align-items-center gap-2 mb-3"><i class="fa-solid fa-location-dot"></i> الرياض</label>
+          <h2 class="mb-3">العقارية الثانية</h2>
+          <span>تجاري - مكتبي</span>
+        </div>
+      </div>
+      <div class="card-project position-relative">
+        <label class="type-project">بيع</label>
+        <img class="img-fluid img-project" src="assets/images/project.webp">
+        <div class="info-project text-white p-4">
+          <label class="d-flex align-items-center gap-2 mb-3"><i class="fa-solid fa-location-dot"></i> الرياض</label>
           <h2 class="mb-3">العقارية الثانية</h2>
           <span>تجاري - مكتبي</span>
         </div>
       </div>
     </div>
   </section>
-
-
-
-
-
+  <section class="explore position-relative">
+    <video preload="auto" playsinline autoplay loop muted>
+      <source src="assets/videos/interactive.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="card-explore bg-white position-absolute p-4">
+      <h2>استكشف <span>مجتمعات العقارية</span>  المحيطة بك.</h2>
+      <a class="btn btn-primary" href="#" target="_blank">الوصول</a>
+    </div>
+  </section>
+  <section class="services py-80">
+    <div class="container">
+      <div class="title-block mb-5">
+        <h2 class="text-white">تصُوّر جديد للحياة</h2>
+        <h3>العصرية</h3>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="services-block text-center">
+            <img class="mb-3" src="assets/images/serv1.svg">
+            <label class="d-block text-white">تصاميم<br>عصرية</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-block text-center">
+            <img class="mb-3" src="assets/images/serv2.svg">
+            <label class="d-block text-white">التزام بمعايير<br>الجودة</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-block text-center">
+            <img class="mb-3" src="assets/images/serv3.svg">
+            <label class="d-block text-white">استدامة<br>وأمان</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-block text-center">
+            <img class="mb-3" src="assets/images/serv4.svg">
+            <label class="d-block text-white">موقع<br>استراتيجي</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-block text-center">
+            <img class="mb-3" src="assets/images/serv5.svg">
+            <label class="d-block text-white">تناغم مع<br>الطبيعة</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-block text-center">
+            <img class="mb-3" src="assets/images/serv6.svg">
+            <label class="d-block text-white">مجتمعات<br>حيوية</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-block text-center">
+            <img class="mb-3" src="assets/images/serv7.svg">
+            <label class="d-block text-white">خدمات<br>متكاملة</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lifestyle py-80">
+    <div class="container">
+      <div class="title-block mb-4 w-50">
+        <h2>مساكن تتجسد</h2>
+        <h3>بأسلوب حياة فاخر</h3>
+        <p>تجمع “العقارية” بين التصميم الراقي واحتياجات السوق من خلال مشاريع سكنية وتجارية فاخرة.</p>
+        <a class="d-flex align-items-center" href="#">اكتشف علاقات المستثمرين <i class="fa-solid fa-arrow-left ms-2 mt-1"></i></a>
+      </div>
+      <div class="d-grid lifestyle-gallery gap-3">
+        <div class="lifestyle-imgs">
+          <img src="assets/images/lifestyle1.webp">
+        </div>
+        <div class="lifestyle-imgs">
+          <img src="assets/images/lifestyle2.webp">
+        </div>
+        <div class="lifestyle-imgs">
+          <img src="assets/images/lifestyle3.webp">
+        </div>
+        </div>
+      </div>
+  </section>
+  <section class="news py-80">
+    <div class="container">
+      <div class="title-block mb-4 w-50">
+        <h2 class="text-white">آخر</h2>
+        <h3>الأخبار</h3>
+      </div>
+      <div class="row g-5">
+        <div class="col-md-5">
+          <div class="post-news">
+            <h2 class="text-white mb-3">“العقارية” تعلن عن نتائجها المالية لعام 2024 وتحقق أداءً قياسيًا مدفوعًا بالنمو المستدام والاستثمارات النوعية</h2>
+            <p class="text-white">"العقارية" تعلن عن نتائجها المالية لعام 2024 وتحقق أداءً قياسيًا مدفوعًا بالنمو المستدام والاستثمارات النوعية</p>
+            <time class="d-block mb-3"><i class="fa-solid fa-calendar"></i> مارس 19, 2025</time>
+            <a class="btn-more text-white border-bottom rounded-0 pb-1" href="#">اقرأ المزيد <i class="fa-solid fa-arrow-left ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <img class="img-fluid" src="assets/images/post-img.png">
+        </div>
+      </div>
+      <a class="btn btn-light" href="#">آخر الأخبار</a>
+    </div>
+  </section>
+  <section class="apps py-80">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="assets/images/apps.png">
+        </div>
+        <div class="col-md-6">
+          <div class="inf-apps">
+            <h2>حمّل تطبيق العقارية واستمتع بتجربة فريدة لإدارة  <span>ممتلكاتك العقارية من جوالك..</span></h2>
+            <div class="apps-downloade d-flex gap-3 mt-4">
+              <a class="btn btn-primary d-flex align-items-center justify-content-center gap-1" href="#"><i class="fa-brands fa-apple"></i> تحميل  </a>
+              <a class="btn btn-light d-flex align-items-center justify-content-center gap-1" href="#"><i class="fa-brands fa-google-play"></i> تحميل  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="companies py-3">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+          <h2 class="mb-0">الشركات العقارية التابعة</h2>
+          <img src="assets/images/com1.svg">
+          <img src="assets/images/com2.svg">
+          <img src="assets/images/com3.svg">
+          <a class="btn btn-primary" href="#">عرض التفاصيل</a>
+      </div>
+    </div>
+  </section>
+  <div class="thumbnail">
+    <img class="img-fluid" src="assets/images/back-footer.jpg">
+  </div>
+  <footer class="footer pt-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer-links">
+            <h2 class="text-white mb-3">مشاريعنا</h2>
+            <ul class="list-unstyled mb-0">
+              <li><a class="d-inline-block text-white mb-2" href="#">الريف</a></li>
+              <li><a class="d-inline-block text-white mb-2" href="#">بورتا جدة</a></li>
+              <li><a class="d-inline-block text-white mb-2" href="#">فَيّ سدرة</a></li>
+              <li><a class="d-inline-block text-white mb-2" href="#">تصفّح المزيد</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-links">
+            <h2 class="text-white mb-3">خريطة الموقع</h2>
+            <ul class="list-unstyled mb-0">
+              <li><a class="d-inline-block text-white mb-2" href="#">الصفحة الرئيسية</a></li>
+              <li><a class="d-inline-block text-white mb-2" href="#">نبذة عن العقارية</a></li>
+              <li><a class="d-inline-block text-white mb-2" href="#">مشاريعنا</a></li>
+              <li><a class="d-inline-block text-white mb-2" href="#">تواصل معنا</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-links">
+            <h2 class="text-white mb-3">روابط سريعة</h2>
+            <ul class="list-unstyled mb-0">
+              <li><a class="d-inline-block text-white mb-2" href="#">وظائف</a></li>
+              <li><a class="d-inline-block text-white mb-2" href="#">تواصل معنا</a></li>
+              <li><a class="d-inline-block text-white mb-2" href="#">التغطية الإعلامية</a></li>
+              <li><a class="d-inline-block text-white mb-2" href="#">الأسئلة الشائعة</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="social-links h-100 d-flex justify-content-end align-items-end">
+            <ul class="list-unstyled mb-0 d-flex gap-2">
+              <li><a class="d-flex align-items-center justify-content-center text-white" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a class="d-flex align-items-center justify-content-center text-white" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a class="d-flex align-items-center justify-content-center text-white" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a class="d-flex align-items-center justify-content-center text-white" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a class="d-flex align-items-center justify-content-center text-white" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright py-4 mt-4">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="footer-logo d-inline-block" href="#"><img src="assets/images/logo.svg"></a>
+          </div>          
+          <div class="col-md-4">
+            <label class="d-block text-center">جميع الحقوق محفوظة © العقارية 2025</label>
+          </div>          
+          <div class="col-md-4">
+            <div class="terms text-end">
+              <a href="#">سياسة الخصوصية</a>
+              <i class="fa-solid fa-circle mx-3"></i>
+              <a href="#">الشروط والأحكام</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
@@ -170,8 +411,8 @@
       margin: 7,
       autoplayTimeout: 6000,
       smartSpeed: 1500,
-      nav: false,
-      navText: ['<img src="images/arrow-right.svg">', '<img src="images/arrow-left.svg">'],
+      nav: true,
+      navText: ['<i class="fa-solid fa-arrow-right"></i>', '<i class="fa-solid fa-arrow-left"></i>'],
       lazyLoad: true,
       rtl: true,
       autoplay: true,
