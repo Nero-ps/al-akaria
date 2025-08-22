@@ -1,9 +1,9 @@
 :root {
   --text-clr:#142238;
   --clr-hover: #AE917C;
-  --sans-arabic: 'TheSansArabic-Light';
+  --sans-light: 'TheSansArabic-Light';
   --sans-bold: 'TheSans-Bold';
-  --sans-light: 'TheSans-Plain';
+  --sans-plan: 'TheSans-Plain';
 }
 @font-face {
     font-family: 'TheSansArabic-Light';
@@ -28,18 +28,18 @@ html {
 
 body{
   font-weight: 400;
-  font-family: var(--sans-arabic);
+  font-family: var(--sans-light);
   height: 100%;
   color: var(--text-clr);
 }
 
 p{
     font-size: 18px;
-    font-family: var(--sans-arabic);
+    font-family: var(--sans-light);
 }
 
 h1,h2,h2,h3,h4,h5,h6{
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
 }
 
 a{
@@ -120,6 +120,37 @@ input[type="number"] {
     z-index: 10;
 }
 
+.header.inner-header{
+    position: static;
+}
+.header.inner-header .nav-item .nav-link{
+  color: var(--text-clr);  
+}
+
+.header.inner-header .nav-item .nav-link:hover{
+    background: var(--clr-hover);
+    color: var(--text-clr);
+}
+
+.header.inner-header .navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header.inner-header .btn-light{
+    color: var(--text-clr);
+    border-color: var(--text-clr);
+}
+
+.header.inner-header .search-btn img{
+    filter: invert(1);
+}
+
+.header.inner-header .btn-primary{
+    background: none;
+    color: var(--text-clr);
+}
+
 .header .navbar {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -157,7 +188,7 @@ input[type="number"] {
 .dropdown-item{
     padding: 8px 10px;
     font-size: 14px;
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
 }
 
 .dropdown-item.active, .dropdown-item:active,.dropdown-item:focus, .dropdown-item:hover{
@@ -186,13 +217,13 @@ input[type="number"] {
 }
 
 .title-block h2{
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
     font-size: 40px;
     margin-bottom: 20px;
 }
 .title-block h3{
     color: var(--clr-hover);
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
     font-size: 40px;
 }
 
@@ -210,7 +241,7 @@ input[type="number"] {
 }
 .counter .counter-block h4{
     font-size: 16px;
-    font-family: var(--sans-arabic);
+    font-family: var(--sans-light);
 }
 
 .about-services h3{
@@ -231,7 +262,7 @@ input[type="number"] {
     background: rgb(49 56 83 / 85%);
     color: #FFFFFF;
     padding: 15px 20px 15px 20px;
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -249,11 +280,11 @@ input[type="number"] {
 
 .card-project .info-project h2{
    font-size: 25px;
-   font-family: var(--sans-light);
+   font-family: var(--sans-plan);
 }
 
 .card-project .info-project span{
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
 }
 
 .projects-slider .owl-nav{
@@ -314,7 +345,7 @@ input[type="number"] {
 }
 
 .explore .card-explore h2{
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
     font-size: 25px;
     margin-bottom: 15px;
     width: 350px;
@@ -376,12 +407,12 @@ input[type="number"] {
 
 .post-news h2{
     font-size: 25px;
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
 }
 
 .post-news time{
     color: var(--clr-hover);
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
 }
 
 .post-news .btn-more i{
@@ -411,7 +442,7 @@ input[type="number"] {
 
 .inf-apps h2{
     font-size: 28px;
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
 }
 
 .inf-apps h2 span{
@@ -420,7 +451,7 @@ input[type="number"] {
 
 .inf-apps .btn{
     width: 185px;
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
 }
 
 .inf-apps .btn i{
@@ -444,7 +475,7 @@ input[type="number"] {
 
 .companies h2{
     font-size: 28px;
-    font-family: var(--sans-light);
+    font-family: var(--sans-plan);
 }
 
 .companies img{
@@ -500,3 +531,244 @@ input[type="number"] {
     font-size: 6px;
 }
 
+.intro-about{
+    background: #F8F5EF;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: calc(100vh - 70px);
+}
+
+.intro-about h1{
+    color: var(--clr-hover);
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: var(--sans-plan);
+}
+.intro-about h2{
+    font-size: 50px;
+    font-family: var(--sans-light);
+    line-height: 70px;
+}
+.back-about{
+    height: 600px;
+    background: url(../images/back-about.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-page .about-us{
+    background: #F8F5EF;
+}
+
+.block-vison h3{
+    color: var(--clr-hover);
+    font-size: 25px;
+    font-family: var(--sans-plan);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--clr-hover);
+    display: table;
+}
+
+.inner-about-services{
+    background: url(../images/back-serv.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.holder-services label{
+    color: #fff;
+    font-size: 30px;
+    font-family: var(--sans-light);
+}
+.holder-services p{
+    color: #fff;
+    font-size: 30px;
+    font-family: var(--sans-plan);
+}
+
+.holder-services p span{
+    color: var(--clr-hover);
+}
+
+.services-counter ul li{
+    font-size: 18px;
+    border-top: 1px solid #79726C;
+}
+
+.services-counter a{
+    font-size: 24px;
+    font-family: var(--sans-plan);
+    border-top: 1px solid #79726C;
+}
+.services-counter a span{
+    color: var(--clr-hover);
+}
+
+.services-counter a i{
+    font-size: 20px;
+}
+
+.manager-block img{
+    width: 85%;
+    margin-bottom: 10px;
+    aspect-ratio: 1 / 1.2;
+    object-fit: cover;
+}
+
+.manager-block h4{
+    font-size: 18px;
+    font-family: var(--sans-bold);
+    color: var(--clr-hover);
+    margin-bottom: 5px;
+}
+.manager-block label{
+    font-size: 16px;
+    font-family: var(--sans-light);
+    color: var(--clr-hover);
+}
+
+.intro-ceo-msg{
+    background: var(--text-clr);
+    height: 500px;
+}
+
+.ceo-word img{
+    height: 400px;
+    width: auto;
+}
+
+.img-subs-details img{
+    width: 100%;
+    height: auto;
+}
+
+.img-subs-details label{
+    font-family: var(--sans-light);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.subs-details h2{
+    font-family: var(--sans-bold);
+    font-size: 20px;
+}
+
+.subs-details p{
+    text-align: justify;
+}
+
+.subs-details .border-bottom{
+    border-bottom: 1px solid #D0D3D7 !important;
+}
+
+.subs-details .border-bottom:last-child{
+    border-bottom: 0 !important;
+}
+
+.history-card h2{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+}
+
+.history-card:after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #14223880;
+    z-index: 8;
+}
+
+.date-card:before{
+    content: '';
+    position: absolute;
+    width: calc(100% + 10px);
+    height: 1px;
+    top: 10px;
+    background: var(--text-clr);
+}
+
+.date-card i{
+    position: absolute;
+    top: 3px;
+    right: 50%;
+    transform: translateX(150%);
+}
+
+.date-card label{
+    font-family: var(--sans-bold);
+}
+
+.slider-history .owl-nav{
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.slider-history .owl-nav button i{
+    font-size: 25px;
+}
+
+.slider-history .owl-nav button:hover i{
+    color: var(--clr-hover);
+}
+
+.owl-carousel .owl-nav button.disabled{
+    opacity: 0.2;
+}
+
+.services-card img{
+    width: 100%;
+    max-height: 355px;
+}
+
+.services-card h2{
+    font-family: var(--sans-bold);
+    font-size: 22px;
+}
+.services-card p{
+    text-align: justify;
+}
+.services-card .border-bottom{
+    border-bottom: 1px solid rgb(20 34 56 / 30%) !important;
+}
+.services-card .border-bottom:last-child{
+    border-bottom: 0 !important;
+}
+.services-card i{
+    position: absolute;
+    right: 0;
+    top: -35px;
+    color: #1422381A;
+    font-family: var(--sans-plan);
+    font-size: 70px;
+    font-style: normal;
+}
+.project-card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.project-card h2{
+    font-size: 32px;
+}
+
+.project-card .badge{
+    background-color: #F3F8FF;
+    font-family: var(--sans-light);
+    font-weight: 500;
+    color: var(--text-clr);
+    border-radius: 50px 50px 50px 50px;
+    padding: 12px 24px;
+    font-size: 18px;
+}
