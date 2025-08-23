@@ -1,9 +1,9 @@
 <?php include 'header.php' ?>
 
   <main class="projects-page">
-    <div class="intro-about intro-ceo-msg text-white text-center d-flex flex-column justify-content-center">
-      <div class="container">
-        <h1>مشاريعنا</h1>
+    <div class="intro-about intro-projects position-relative text-white text-center d-flex flex-column justify-content-center">
+      <div class="container position-relative">
+        <h1 class="text-white">مشاريعنا</h1>
         <h2>تُبنى لتنعم بالحياة فيها .. <br>فخامة الحياة وزهو التفاصيل ...</h2>
       </div>
     </div>
@@ -38,9 +38,27 @@
       <div class="row align-items-center">
         <div class="col-md-6">
           <div class="project-card">
-            <img src="assets/images/pro1.webp">
-            <h2 class="my-4">العقارية بارك</h2>
-            <div class="d-flex gap-3 mb-4">
+            <div class="position-relative">
+              <img src="assets/images/pro1.webp">
+              <a href="#" class="stretched-link" ></a>
+            </div>
+              <h2 class="my-4">العقارية بارك</h2>
+            <div class="d-flex gap-2 mb-4">
+              <span class="badge">الرياض</span>
+              <span class="badge">6 نماذج</span>
+              <span class="badge">سكني</span>
+            </div>
+            <p>من شمال شرق مدينة الرياض انطلقت العقارية بارك متضمنةً العديد من الوجهات الترفيهية الممتدة المرتكزة على أجود البنى التحتية لتقدم تجربة عيش رحبة بموقعها</p>        
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project-card">
+            <div class="position-relative">
+              <img src="assets/images/pro2.webp">
+              <a href="#" class="stretched-link" ></a>
+            </div>
+              <h2 class="my-4">العقارية بارك</h2>
+            <div class="d-flex gap-2 mb-4">
               <span class="badge">الرياض</span>
               <span class="badge">6 نماذج</span>
               <span class="badge">سكني</span>

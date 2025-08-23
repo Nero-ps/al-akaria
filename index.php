@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Al-akaria</title>
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -15,7 +20,7 @@
   <header class="header">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand me-5" href="#"><img src="assets/images/logo.svg"></a>
+        <a class="navbar-brand me-5" href="#"><img class="logo-white" src="assets/images/logo.svg"><img class="logo-blue" src="assets/images/logo-blue.svg"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,7 +67,7 @@
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="btn btn-light me-2" href="#">EN</a></li>
-            <li class="nav-item"><a class="btn btn-light me-2 search-btn" href="#"><img src="assets/images/search.png"></a></li>
+            <li class="nav-item"><a class="btn btn-light me-2 search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             <li class="nav-item"><a class="btn btn-primary" href="#">تواصل معنا</a></li>
           </ul>
         </div>
@@ -302,11 +307,17 @@
           <img src="assets/images/apps.png">
         </div>
         <div class="col-md-6">
-          <div class="inf-apps">
-            <h2>حمّل تطبيق العقارية واستمتع بتجربة فريدة لإدارة  <span>ممتلكاتك العقارية من جوالك..</span></h2>
-            <div class="apps-downloade d-flex gap-3 mt-4">
-              <a class="btn btn-primary d-flex align-items-center justify-content-center gap-1" href="#"><i class="fa-brands fa-apple"></i> تحميل  </a>
-              <a class="btn btn-light d-flex align-items-center justify-content-center gap-1" href="#"><i class="fa-brands fa-google-play"></i> تحميل  </a>
+          <div class="inf-apps text-center">
+            <h2>حمّل تطبيق العقارية واستمتع بتجربة فريدة لإدارة  <span>ممتلكاتك العقارية من جوالك</span></h2>
+            <div class="apps-downloade d-flex justify-content-center gap-3 mt-4">
+              <a class="d-block" href="#">
+                <img src="assets/images/app-store.svg">
+              </a>
+              <a class="d-block" href="#">
+                <img src="assets/images/google-play.svg">
+              </a>
+              <!-- <a class="btn btn-primary d-flex align-items-center justify-content-center gap-1" href="#"><i class="fa-brands fa-apple"></i> تحميل  </a>
+              <a class="btn btn-light d-flex align-items-center justify-content-center gap-1" href="#"><i class="fa-brands fa-google-play"></i> تحميل  </a> -->
             </div>
           </div>
         </div>
@@ -317,9 +328,9 @@
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">
           <h2 class="mb-0">الشركات العقارية التابعة</h2>
-          <img src="assets/images/com1.svg">
-          <img src="assets/images/com2.svg">
-          <img src="assets/images/com3.svg">
+          <img src="assets/images/comp1.svg">
+          <img src="assets/images/comp2.svg">
+          <img src="assets/images/comp3.svg">
           <a class="btn btn-primary" href="#">عرض التفاصيل</a>
       </div>
     </div>

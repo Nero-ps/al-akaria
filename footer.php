@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="copyright py-4 mt-4">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-4">
             <a class="footer-logo d-inline-block" href="#"><img src="assets/images/logo.svg"></a>
           </div>          
@@ -100,8 +100,8 @@
             }
         }
     });
-  </script>
-  <script>
+
+
       $('.slider-history').owlCarousel({
         loop: false,
         margin: 10,
@@ -131,6 +131,101 @@
             }
         }
     });
+
+      $('#slider-news').owlCarousel({
+        loop: true,
+        margin: 15,
+        autoplayTimeout: 6000,
+        smartSpeed: 1500,
+        nav: true,
+        navText: ['<i class="fa-solid fa-arrow-right"></i>', '<i class="fa-solid fa-arrow-left"></i>'],
+        lazyLoad: true,
+        rtl: true,
+        autoplay: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            450: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            992: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });      
+
+      $('#gallery-project').owlCarousel({
+        loop: true,
+        margin: 15,
+        autoplayTimeout: 6000,
+        smartSpeed: 1500,
+        nav: true,
+        navText: ['<i class="fa-solid fa-arrow-right"></i>', '<i class="fa-solid fa-arrow-left"></i>'],
+        lazyLoad: true,
+        rtl: true,
+        autoplay: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            450: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            992: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+
+  let lastScrollTop = 0;
+  const header = document.querySelector('.header');
+
+  window.addEventListener('scroll', () => {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll < lastScrollTop) {
+      // رجوع للأعلى
+      if (currentScroll > 100) {
+        header.classList.add('scroll-up');
+      } else {
+        header.classList.remove('scroll-up');
+      }
+    } else {
+      // نزول للأسفل
+      header.classList.remove('scroll-up');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  });
+
+
+
+
+
+  const heroVideo = document.querySelector('.hero video');
+
+  // لما يكون الفيديو جاهز للتشغيل
+  heroVideo.addEventListener('canplay', () => {
+    heroVideo.classList.add('show'); // يظهر الفيديو
+    heroVideo.play(); // يبدأ التشغيل
+  });
+
+
   </script>
   </body>
 </html>
