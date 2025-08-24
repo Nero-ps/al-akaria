@@ -301,6 +301,10 @@ input[type="number"] {
     font-family: var(--sans-light);
 }
 
+.about-services img{
+    height: 380px;
+}
+
 .about-services h3{
     font-family: var(--sans-bold);
     font-size: 22px;
@@ -865,6 +869,14 @@ input[type="number"] {
     line-height: normal;
 }
 
+.content-news{
+    background: #f8f5ef;
+}
+
+/*.news-single .latest-news{
+    background: #f8f5ef;
+}
+*/
 .latest-news .card{
     border: 0;
     border-radius: 0;
@@ -1159,4 +1171,32 @@ input[type="number"] {
 }
 .block-report .btn-light:hover{
     color: #fff;
+}
+.news-single .btn-back{
+    color: rgb(183, 187, 194);
+}
+
+.news-single .btn-back:hover{
+    color: var(--text-clr);
+}
+
+.news-single h1{
+    font-family: var(--sans-bold);
+    font-size: 25px;
+}
+
+.news-single time{
+    font-family: var(--sans-plan);
+    text-align: left;
+}
+
+.news-single .post-thumbnail{
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: cover;
+}
+
+.news-single p{
+    text-align: justify;
 }

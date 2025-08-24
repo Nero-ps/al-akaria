@@ -132,7 +132,7 @@
         }
     });
 
-      $('#slider-news').owlCarousel({
+      $('.slider-news').owlCarousel({
         loop: true,
         margin: 15,
         autoplayTimeout: 6000,
